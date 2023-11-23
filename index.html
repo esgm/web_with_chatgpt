@@ -7,7 +7,10 @@
     body {
     margin: 0;
     padding: 0;
-    }
+    font-family: Arial, sans-serif;
+    background: linear-gradient(45deg, #8B0000, #000000);
+    color: #fff;
+}
 
     /* Estilos generales para los encabezados */
     h1, h2 {
@@ -33,7 +36,7 @@
     /* Estilos para la sección de habilidades */
     #habilidades {
     padding: 50px;
-    background-color: #BCE5F5;
+    /*background-color: #BCE5F5;-*/
     }
 
     /* Estilos para la lista de habilidades */
@@ -69,49 +72,95 @@
     font-size: 16px;
     color: #333;
     }
+    #proyectos {
+    padding: 50px;
+    background: linear-gradient(45deg, #8B0000, #000000);
+}
+
+.tarjeta-proyecto {
+    background: linear-gradient(45deg, #40d866, #252424);
+    color: #fff;
+    border: 5px solid #000;
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3), 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Al pasar el ratón sobre la tarjeta, aplicar un efecto de levantamiento */
+.tarjeta-proyecto:hover {
+    transform: translateY(-5px);
+}
+
+/* Estilos para el título de la tarjeta */
+.tarjeta-proyecto h3 {
+    margin-bottom: 10px;
+}
+
+/* Estilos para el párrafo de la tarjeta */
+.tarjeta-proyecto p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Ajusta otros estilos según sea necesario */
   </style>
   <link rel="stylesheet" href="estilos.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
   <!-- Sección de inicio -->
   <section id="inicio" style="background: linear-gradient(45deg, #8B0000, #000000);">
-    <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="Imagen de cabecera">
-    <h1 style="color: #fff;">Nombre Apellido</h1>
-    <p style="color: #fff;">Breve descripción sobre ti y tus intereses profesionales.</p>
+    <img src="https://avatars.githubusercontent.com/u/61565768?v=4" alt="Imagen de cabecera">
+    <h1 style="color: #fff;">Eber Stev Gonzalez Martinez (esgmcode)</h1>
+    <p style="color: #fff;">Soy un diseñador web apasionado por la tecnología. Mi experiencia abarca desde el diseño creativo hasta aspectos técnicos, incluyendo bases de datos, telefonía IP, cámaras IP, firewall y programación básica. Disfruto combinando la estética visual con soluciones tecnológicas sólidas para ofrecer experiencias web impactantes y funcionales..</p>
  </section>
 
   <!-- Sección de habilidades -->
   <section id="habilidades">
     <h2>Habilidades</h2>
     <ul>
-      <li>HTML</li>
-      <li>CSS</li>
-      <li>JavaScript</li>
-      <li>Otras habilidades relevantes</li>
+        <li><a href="enlace_html">HTML</a></li>
+        <li><a href="enlace_css">CSS</a></li>
+        <li><a href="enlace_javascript">JavaScript</a></li>
+        <li><a href="enlace_otras_habilidades">Otras habilidades relevantes</a></li>
     </ul>
-  </section>
+    </section>
 
   <!-- Sección de proyectos -->
   <section id="proyectos">
     <h2>Proyectos</h2>
-    <ul>
-      <li>Nombre del Proyecto 1</li>
-      <li>Nombre del Proyecto 2</li>
-      <li>Nombre del Proyecto 3</li>
-      <!-- Puedes agregar más proyectos aquí -->
-    </ul>
-  </section>
+    <div class="tarjeta-proyecto">
+        <h3>Nombre del Proyecto 1</h3>
+        <p>Descripción del Proyecto 1. Puedes agregar más detalles aquí.</p>
+        <!-- Agrega otros datos según sea necesario -->
+    </div>
+    <div class="tarjeta-proyecto">
+        <h3>Nombre del Proyecto 2</h3>
+        <p>Descripción del Proyecto 2. Puedes agregar más detalles aquí.</p>
+        <!-- Agrega otros datos según sea necesario -->
+    </div>
+    <!-- Puedes agregar más tarjetas de proyectos aquí -->
+</section>
 
   <!-- Sección de contacto -->
   <section id="contacto">
     <h2>Contacto</h2>
     <p>Puedes contactarme a través de los siguientes medios:</p>
     <ul>
-      <li>Email: tu@email.com</li>
-      <li>Teléfono: +123456789</li>
-      <li>Redes sociales: enlace a tus perfiles en redes sociales</li>
+        <li>Email: esgm@gmail.com</li>
+        <li>Teléfono: +50242160814</li>
+        <li>
+          Redes sociales:
+          <a href="enlace_github" class="red-social"><i class="fab fa-github fa-2x"></i></a>
+          <a href="enlace_facebook" class="red-social"><i class="fab fa-facebook fa-2x"></i></a>
+          <a href="enlace_instagram" class="red-social"><i class="fab fa-instagram fa-2x"></i></a>
+          <a href="enlace_discord" class="red-social"><i class="fab fa-discord fa-2x"></i></a>
+          <a href="enlace_linkedin" class="red-social"><i class="fab fa-linkedin fa-2x"></i></a>
+      </li>
     </ul>
-  </section>
+</section>
 
   <!-- Puedes agregar más secciones según tus necesidades -->
 
